@@ -5,8 +5,8 @@ $(document).on('scroll', function (e) {
 
 $(function(){
         $("#typed").typed({
-            strings: ["Drummer", "Runner", "Developer"],
-            typeSpeed: 120,
-            loop: true
+            strings: ["Hugo Källström"],
+            typeSpeed: 150,
+            backDelay: 900
         });
 });
