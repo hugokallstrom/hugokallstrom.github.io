@@ -45,6 +45,62 @@ h6 {
       opacity: 1;
 }
 
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }   
+    50% {
+        -webkit-transform: scale(1.2, 1.2);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    };
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    };
+}
+
+.fa-angle-down {
+    color: #fff;
+    -webkit-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
+}
+
+.fa-angle-down:hover {
+    -webkit-animation: none;
+    animation:none;
+}
+
+.fa-github {
+    color: #30B230;
+}
+
+.fa-linkedin {
+    color: #0060B6;
+}
+
+.fa-download {
+    color: #DCBB2A;
+}
+
+.continue {
+    text-decoration: none;
+ }
+
+.continue:hover {
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
 .lead {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -73,7 +129,7 @@ h6 {
 }
 
 .intro-divider {
-    width: 400px;
+    width: 550px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
